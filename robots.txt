@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://team8029.com/sitemap.xml

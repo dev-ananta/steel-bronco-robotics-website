@@ -1,88 +1,46 @@
-# Steel Broncos Robotics — Vercel Refurbishment
+# Steel Bronco Robotics — Team 8029 Website
 
-A sponsor-first static redesign for FIRST Robotics Competition Team 8029.
+A deliberately small, hand-maintainable static site for Steel Bronco Robotics / FRC Team 8029.
 
-## Design goals
+## Design direction
 
-- Professional, engineering-forward visual identity
-- Sponsor/grant conversion as a first-class goal
-- Fast image loading and minimal JavaScript
-- Responsive mobile navigation
-- Persistent light/dark mode
-- Data-driven team, mentor, sponsor, social, and history content
-- Accessible semantic HTML and keyboard-friendly controls
-- Easy editing by future student web developers
+The site combines two useful directions: the sponsor/conversion focus and strong CTA structure of the refurbishment, with the editorial confidence, competition record, engineering/manufacturing story, FTC ecosystem and partner proof points of the public Team 8029 site.
+
+The implementation intentionally avoids a framework and avoids runtime-generated page chrome. Shared navigation and footer markup live directly in each document so the site remains crawlable, resilient when JavaScript is unavailable, and easy for student developers to understand.
 
 ## Project structure
 
 ```text
 /
 ├── index.html
+├── engineering.html
 ├── team.html
+├── competitions.html
 ├── impact.html
 ├── sponsors.html
-├── history.html
-├── contact.html
+├── join.html
+├── robots.txt
+├── sitemap.xml
 ├── vercel.json
 ├── README.md
 └── assets/
     ├── css/site.css
-    ├── js/data.js      # EDIT THIS FIRST
-    ├── js/site.js      # shared behavior/components
-    └── images/
-        ├── members/    # optimized student headshots
-        ├── team/
-        └── brand/
+    ├── js/site.js
+    └── images/brand/
 ```
 
-## Adding a team member
+## Updating content
 
-1. Export an approved professional headshot as WebP.
-2. Put it in `assets/images/members/`.
-3. Add an object to `teamMembers` in `assets/js/data.js`:
+Most page copy is intentionally written in the HTML beside the section it describes. This makes edits obvious and prevents a large JavaScript data object from becoming a second templating system.
 
-```js
-{
-  name: 'Student Name',
-  role: 'Mechanical Lead',
-  bio: 'Short 2–4 sentence biography.',
-  image: 'assets/images/members/student-name.webp',
-  skills: ['CAD', 'Fabrication', 'Project Management']
-}
-```
+Seasonal facts should be verified before publishing. Placeholder sections are explicitly labeled when future team-approved information is expected.
 
-The Team page automatically creates the card.
+## Images
 
-## Image performance
+The included SVG artwork is a temporary local placeholder, not an official team photograph or logo. Replace it with approved team assets in `assets/images/` before launch. Keep image dimensions explicit and prefer AVIF/WebP for photographs.
 
-Prefer WebP/AVIF, approximately 800–1200px on the long edge for profile and gallery images. Do not commit original multi-megabyte camera files unless they are stored outside the production asset directory.
+## Development
 
-The site uses:
+No build step is required. Open `index.html` locally or deploy the folder directly to Vercel.
 
-- `loading="lazy"` for below-the-fold images
-- `fetchpriority="high"` for the hero image
-- `decoding="async"`
-- explicit image dimensions where known
-- CSS aspect-ratio containers to prevent layout shift
-- Vercel long-lived asset caching
-- the existing Wix CDN's transformed AVIF images temporarily for legacy public photography
-
-For a full Wix-to-Vercel migration, download the approved original photos, optimize them into local WebP/AVIF files, then replace the CDN URLs in `assets/js/data.js`.
-
-## Social media currently identified
-
-- Instagram: https://www.instagram.com/steelbronco_robotics/
-- X/Twitter: https://twitter.com/BroncoSteel
-- Facebook: https://www.facebook.com/Steel-Bronco-Robotics-2332730843673036/
-
-## Current contact identified on the public site
-
-Steel Broncos Robotics — `info@team8029.com`
-
-## Important content maintenance
-
-The public source currently contains historical 2025 schedule information. Do not copy those dates into a new season page without verifying them. Update current-season competition dates in `assets/js/data.js` before publishing.
-
-## Deployment
-
-Import the repository into Vercel. No build command is required; the project is static HTML/CSS/JS.
+The only JavaScript handles mobile navigation and the light/dark theme preference. The site remains usable if JavaScript fails.

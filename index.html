@@ -1,133 +1,413 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width,initial-scale=1" />
-        <meta
-            name="description"
-            content="Steel Broncos Robotics — FRC Team 8029. Students building robots, skills, and community through STEM."
-        />
-        <title>Steel Broncos Robotics · FRC 8029</title>
-        <link rel="icon" type="image/png" href="assets/images/brand/icon.png" />
-        <link rel="stylesheet" href="assets/css/site.css" />
-        <script src="assets/js/data.js" defer></script>
-        <script src="assets/js/site.js" defer></script>
-    </head>
-    <body>
-        <div data-site-header></div>
-        <main>
-            <section class="hero">
-                <div class="container hero-grid">
-                    <div class="hero-copy">
-                        <span class="eyebrow">FIRST Robotics Competition · Team 8029</span>
-                        <h1>Build <span>robots.</span><br />Build people.</h1>
-                        <p class="lead">
-                            Steel Broncos Robotics gives students a hands-on arena to design, build,
-                            program, compete, lead, and discover what they can do with STEM.
-                        </p>
-                        <div class="hero-actions">
-                            <a class="btn btn-accent" href="contact.html">Sponsor the team →</a
-                            ><a class="btn btn-ghost" href="team.html">Meet the people</a>
-                        </div>
-                        <div class="social-row margin-top-24" data-social></div>
-                    </div>
-                    <div class="hero-panel">
-                        <div class="hero-image">
-                            <img
-                                src="https://static.wixstatic.com/media/d33e37_d05208b4baef472fb041e7d04925dd4f~mv2.png/v1/crop/x_128%2Cy_840%2Cw_3528%2Ch_2184/fill/w_1200%2Ch_744%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/IMG_7087_HEIC.png"
-                                alt="Steel Broncos Robotics team at competition"
-                                width="1200"
-                                height="744"
-                                decoding="async"
-                            />
-                        </div>
-                        <div class="mini-stats">
-                            <div><strong>8029</strong><span>FRC Team</span></div>
-                            <div><strong>STEM</strong><span>Learn by Doing</span></div>
-                            <div><strong>IL</strong><span>Community</span></div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="section-tight">
-                <div class="container">
-                    <div class="section-head">
-                        <div>
-                            <span class="eyebrow">Our Impact</span>
-                            <h2>What We Do</h2>
-                            <p>
-                                Our team focuses on developing students' technical skills and
-                                leadership abilities through hands-on experience in engineering,
-                                project management, and community engagement.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="impact-grid">
-                        <article class="impact-card">
-                            <strong>01</strong>
-                            <h3>Engineering</h3>
-                            <span
-                                >CAD, mechanical systems, electrical work, programming, testing,
-                                iteration.</span
-                            >
-                        </article>
-                        <article class="impact-card">
-                            <strong>02</strong>
-                            <h3>Leadership</h3>
-                            <span
-                                >Students learn to own decisions, manage deadlines, document work,
-                                and teach peers.</span
-                            >
-                        </article>
-                        <article class="impact-card">
-                            <strong>03</strong>
-                            <h3>Community</h3>
-                            <span
-                                >A pathway from beginner curiosity to real technical confidence and
-                                STEM identity.</span
-                            >
-                        </article>
-                    </div>
-                </div>
-            </section>
-            <section class="section">
-                <div class="container">
-                    <div class="sponsor-banner">
-                        <div>
-                            <span class="eyebrow">For sponsors & grantmakers</span>
-                            <h2>Your support becomes student opportunity.</h2>
-                            <p>
-                                Help fund the tools, materials, competition travel, training,
-                                outreach, and experiences that turn a student interested in STEM
-                                into a student confident enough to build it.
-                            </p>
-                        </div>
-                        <div class="hero-actions">
-                            <a
-                                class="btn btn-accent"
-                                href="mailto:info@team8029.com?subject=Steel%20Broncos%20Robotics%20Sponsorship"
-                                >Start a sponsorship conversation</a
-                            ><a class="btn" href="sponsors.html">See sponsorship opportunities</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="section-tight">
-                <div class="container">
-                    <div class="section-head">
-                        <div>
-                            <span class="eyebrow">In the arena</span>
-                            <h2>Competition is where learning gets real.</h2>
-                        </div>
-                        <p>
-                            Use the team history and gallery to show supporters the environment
-                            their contribution helps create.
-                        </p>
-                    </div>
-                    <div class="gallery" data-gallery></div>
-                </div>
-            </section>
-        </main>
-        <div data-site-footer></div>
-    </body>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="Steel Bronco Robotics is a student-led FIRST Robotics Competition team at Barrington High School, building robots and engineering leaders." name="description"/>
+  <meta content="Steel Bronco Robotics | FRC Team 8029" property="og:title"/>
+  <meta content="Steel Bronco Robotics is a student-led FIRST Robotics Competition team at Barrington High School, building robots and engineering leaders." property="og:description"/>
+  <meta content="website" property="og:type"/>
+  <meta content="https://team8029.com/" property="og:url"/>
+  <meta content="https://team8029.com/assets/images/brand/team-placeholder.svg" property="og:image"/>
+  <link href="https://team8029.com/" rel="canonical"/>
+  <link href="/assets/images/brand/mark.svg" rel="icon" type="image/svg+xml"/>
+  <link href="/assets/css/site.css" rel="stylesheet"/>
+  <script defer="" src="/assets/js/site.js">
+  </script>
+  <title>
+   Steel Bronco Robotics | FRC Team 8029
+  </title>
+  <script type="application/ld+json">
+   {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "Steel Bronco Robotics",
+    "description": "FIRST Robotics Competition Team 8029 at Barrington High School.",
+    "url": "https://team8029.com/",
+    "email": "info@team8029.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Barrington",
+      "addressRegion": "IL",
+      "addressCountry": "US"
+    }
+  }
+  </script>
+ </head>
+ <body data-page="home">
+  <a class="skip-link" href="#main">
+   Skip to main content
+  </a>
+  <header class="site-header">
+   <div class="container header-inner">
+    <a aria-label="Steel Bronco Robotics home" class="brand" href="/">
+     <img alt="" height="42" src="/assets/images/brand/mark.svg" width="42"/>
+     <span>
+      Steel Bronco
+      <small>
+       Robotics &middot; FRC 8029
+      </small>
+     </span>
+    </a>
+    <div class="header-tools">
+     <button aria-controls="primary-navigation" aria-expanded="false" class="menu" data-menu="" type="button">
+      Menu
+     </button>
+     <nav aria-label="Primary navigation" class="nav" data-nav="" id="primary-navigation">
+      <a data-page="home" href="/">
+       Home
+      </a>
+      <a data-page="engineering" href="/engineering.html">
+       Engineering
+      </a>
+      <a data-page="team" href="/team.html">
+       Team
+      </a>
+      <a data-page="competitions" href="/competitions.html">
+       Competitions
+      </a>
+      <a data-page="impact" href="/impact.html">
+       Impact
+      </a>
+      <a data-page="sponsors" href="/sponsors.html">
+       Sponsors
+      </a>
+      <a class="cta" data-page="join" href="/join.html">
+       Join / Support
+      </a>
+     </nav>
+     <button aria-label="Use dark theme" class="theme" data-theme-toggle="" type="button">
+      ◐
+     </button>
+    </div>
+   </div>
+  </header>
+  <main id="main">
+   <section class="hero">
+    <div class="container hero-grid">
+     <div>
+      <span class="eyebrow">
+       FIRST Robotics Competition &middot; Team 8029
+      </span>
+      <h1>
+       We build robots.
+       <br/>
+       We become engineers.
+      </h1>
+      <p class="lede">
+       A student-led engineering program where design decisions become hardware, code becomes motion, and competition becomes a place to learn.
+      </p>
+      <div class="actions">
+       <a class="btn btn-primary" href="/competitions.html">
+        Explore the team
+       </a>
+       <a class="btn" href="/sponsors.html">
+        Partner with us
+       </a>
+      </div>
+     </div>
+     <div class="hero-media">
+      <img alt="Steel Bronco Robotics team and robot placeholder image" height="900" src="/assets/images/brand/team-placeholder.svg" width="1600"/>
+     </div>
+    </div>
+   </section>
+   <section>
+    <div class="container stats">
+     <div class="stat">
+      <strong>
+       2025&ndash;26
+      </strong>
+      <span>
+       Back-to-back Midwest Regional champions
+      </span>
+     </div>
+     <div class="stat">
+      <strong>
+       60+
+      </strong>
+      <span>
+       Students building across technical and business disciplines
+      </span>
+     </div>
+     <div class="stat">
+      <strong>
+       2020
+      </strong>
+      <span>
+       FRC program founded at Barrington High School
+      </span>
+     </div>
+    </div>
+   </section>
+   <section class="section">
+    <div class="container">
+     <div class="section-head">
+      <div>
+       <span class="eyebrow">
+        01 &middot; Competition
+       </span>
+       <h2>
+        Built for the field.
+       </h2>
+      </div>
+      <p>
+       Six seasons of FIRST Robotics Competition, with back-to-back Midwest Regional titles in 2025 and 2026.
+      </p>
+     </div>
+     <div class="feature-grid">
+      <article class="feature">
+       <span class="number">
+        2026
+       </span>
+       <h3>
+        Midwest Regional Winner
+       </h3>
+       <p>
+        Alliance 3 with teams 48 and 2338.
+       </p>
+      </article>
+      <article class="feature">
+       <span class="number">
+        2025
+       </span>
+       <h3>
+        Midwest Regional Winner
+       </h3>
+       <p>
+        Alliance 1 with teams 111 and 2338.
+       </p>
+      </article>
+      <article class="feature">
+       <span class="number">
+        EVERY SEASON
+       </span>
+       <h3>
+        Student ownership
+       </h3>
+       <p>
+        Strategy, engineering, business, media and competition operations are part of the student experience.
+       </p>
+      </article>
+     </div>
+    </div>
+   </section>
+   <section class="section dark-section">
+    <div class="container">
+     <div class="section-head">
+      <div>
+       <span class="eyebrow">
+        02 &middot; Engineering
+       </span>
+       <h2>
+        From CAD to competition.
+       </h2>
+      </div>
+      <p>
+       Students define the problem, design it, manufacture it, wire it, program it, and then drive it under match pressure.
+      </p>
+     </div>
+     <div class="feature-grid">
+      <article class="feature">
+       <span class="number">
+        DESIGN
+       </span>
+       <h3>
+        Mechanical + CAD
+       </h3>
+       <p class="muted">
+        Iterate mechanisms around real constraints: geometry, weight, reliability and cycle time.
+       </p>
+      </article>
+      <article class="feature">
+       <span class="number">
+        MAKE
+       </span>
+       <h3>
+        Manufacturing
+       </h3>
+       <p class="muted">
+        Welding, 3D printing, CNC machining, fabrication and assembly turn ideas into hardware.
+       </p>
+      </article>
+      <article class="feature">
+       <span class="number">
+        CONTROL
+       </span>
+       <h3>
+        Electrical + software
+       </h3>
+       <p class="muted">
+        Students wire, program, test and troubleshoot systems that must work when the clock is running.
+       </p>
+      </article>
+     </div>
+    </div>
+   </section>
+   <section class="section">
+    <div class="container">
+     <div class="image-strip">
+      <figure>
+       <img alt="Team competition photo placeholder" height="900" src="/assets/images/brand/team-placeholder.svg" width="1600"/>
+       <figcaption class="caption">
+        Competition &middot; replace with approved team photography
+       </figcaption>
+      </figure>
+      <figure>
+       <img alt="Engineering photo placeholder" height="900" src="/assets/images/brand/team-placeholder.svg" width="1600"/>
+       <figcaption class="caption">
+        Engineering &middot; replace with shop photography
+       </figcaption>
+      </figure>
+      <figure>
+       <img alt="Team photo placeholder" height="900" src="/assets/images/brand/team-placeholder.svg" width="1600"/>
+       <figcaption class="caption">
+        Team &middot; replace with approved group photo
+       </figcaption>
+      </figure>
+     </div>
+    </div>
+   </section>
+   <section class="section">
+    <div class="container">
+     <div class="section-head">
+      <div>
+       <span class="eyebrow">
+        03 &middot; Team
+       </span>
+       <h2>
+        Student built. Student led.
+       </h2>
+      </div>
+      <p>
+       Students work across the entire program, not just the robot.
+      </p>
+     </div>
+     <div class="feature-grid">
+      <article class="feature">
+       <h3>
+        Mechanical
+       </h3>
+       <p>
+        Design, fabrication and assembly.
+       </p>
+      </article>
+      <article class="feature">
+       <h3>
+        Design / CAD
+       </h3>
+       <p>
+        Modeling, drawings and iterative design.
+       </p>
+      </article>
+      <article class="feature">
+       <h3>
+        Manufacturing
+       </h3>
+       <p>
+        Welding, machining, printing and finishing.
+       </p>
+      </article>
+      <article class="feature">
+       <h3>
+        Electrical
+       </h3>
+       <p>
+        Power, wiring, sensors and integration.
+       </p>
+      </article>
+      <article class="feature">
+       <h3>
+        Software
+       </h3>
+       <p>
+        Robot control, vision, tooling and data.
+       </p>
+      </article>
+      <article class="feature">
+       <h3>
+        Strategy &middot; Business &middot; Media
+       </h3>
+       <p>
+        Scouting, partnerships, outreach, documentation and communications.
+       </p>
+      </article>
+     </div>
+    </div>
+   </section>
+   <section class="section">
+    <div class="container">
+     <div class="cta-band">
+      <div>
+       <h2>
+        Build something that matters.
+       </h2>
+       <p>
+        Interested in joining, sponsoring, mentoring or collaborating with Team 8029?
+       </p>
+      </div>
+      <a class="btn" href="/join.html">
+       Start here &rarr;
+      </a>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="site-footer">
+   <div class="container footer-grid">
+    <div>
+     <span class="eyebrow">
+      FRC 8029
+     </span>
+     <h2>
+      We build robots. We become engineers.
+     </h2>
+     <p>
+      Steel Bronco Robotics is a student-led FIRST Robotics Competition program at Barrington High School in Illinois.
+     </p>
+    </div>
+    <div class="footer-links">
+     <strong>
+      Explore
+     </strong>
+     <a href="/engineering.html">
+      Engineering
+     </a>
+     <a href="/competitions.html">
+      Competitions
+     </a>
+     <a href="/impact.html">
+      Impact &amp; outreach
+     </a>
+     <a href="/sponsors.html">
+      Partners
+     </a>
+    </div>
+    <div class="footer-links">
+     <strong>
+      Connect
+     </strong>
+     <a href="mailto:info@team8029.com">
+      info@team8029.com
+     </a>
+     <a href="https://www.instagram.com/steelbronco_robotics/" rel="noopener noreferrer" target="_blank">
+      Instagram &nearrow;
+     </a>
+     <a href="https://www.facebook.com/Steel-Bronco-Robotics-2332730843673036/" rel="noopener noreferrer" target="_blank">
+      Facebook &nearrow;
+     </a>
+     <a href="https://twitter.com/BroncoSteel" rel="noopener noreferrer" target="_blank">
+      X &nearrow;
+     </a>
+    </div>
+   </div>
+   <div class="container footer-bottom">
+    <span>
+     &copy; 2026 Steel Bronco Robotics &middot; FRC 8029
+    </span>
+    <span>
+     Barrington High School &middot; Barrington, Illinois
+    </span>
+   </div>
+  </footer>
+ </body>
 </html>

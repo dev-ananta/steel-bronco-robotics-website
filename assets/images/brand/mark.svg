@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="title desc">
+  <title id="title">Steel Bronco Robotics mark</title>
+  <desc id="desc">A simple red geometric bronco-inspired mark for FRC Team 8029.</desc>
+  <rect width="160" height="160" rx="28" fill="#151515"/>
+  <path d="M39 113 52 43l28 25 29-25 12 70-28-14-13 18-14-18-27 14Z" fill="#c81924"/>
+  <path d="m65 57 15 14 16-14-8 29H73Z" fill="#151515"/>
+</svg>
