@@ -28,12 +28,7 @@ window.SBR_DATA = {
         },
     ],
 
-    sponsors: [
-        { name: "University of Illinois Urbana-Champaign", image: "", tier: "Community Partner" },
-        { name: "Platinum Tools", image: "", tier: "Corporate Sponsor" },
-        { name: "Allstate", image: "", tier: "Corporate Sponsor" },
-        { name: "Name", image: "", tier: "Type of Sponsor" },
-    ],
+    sponsors: [{ name: "Name", image: "", tier: "Type of Sponsor" }],
 
     mentors: [
         {

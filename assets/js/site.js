@@ -19,7 +19,7 @@
             header.innerHTML = `
         <header class="site-header">
           <a class="brand" href="index.html" aria-label="Steel Broncos Robotics home">
-            <span class="brand-mark">8029</span>
+            <img class="brand-mark" src="assets/images/brand/icon.png" alt="Steel Broncos Robotics logo">
             <span><strong>Steel Broncos</strong><small>Robotics · FRC 8029</small></span>
           </a>
           <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>

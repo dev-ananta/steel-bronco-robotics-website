@@ -77,7 +77,7 @@ For a full Wix-to-Vercel migration, download the approved original photos, optim
 
 ## Current contact identified on the public site
 
-Greg Cullen — `gregcullie@gmail.com`
+Steel Broncos Robotics — `info@team8029.com`
 
 ## Important content maintenance
 
